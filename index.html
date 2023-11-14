@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Collab</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="images/comic book icon.jpg">
+    <style>
+           @media only screen and  ( max-width:650px){
+            .img1{
+                height: 100%;
+                width: 100%
+            }
+            .topnav a{
+                display: inline-block;
+               padding: 7px;
+                height: 100%;
+            }
+           }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Comic Collab</h1>
+        <nav>
+            <div class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="categories.html">Genres & Categories</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <h2>Upload Your Comic</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <input type="file" name="comicFile" accept=".pdf, .jpg, .png" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section class="comics-section">
+            <h2>Uploaded Comics</h2>
+            <!-- Display uploaded comics here -->
+            <img class="img1" src="https://images.unsplash.com/photo-1601645191163-3fc0d5d64e35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29taWNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                alt="">
+            <img class="img1" src="https://image.api.playstation.com/vulcan/ap/rnd/202106/1704/CThITKGLtVx842gN7MeKC8TJ.jpg?w=5000&thumb=false"
+                alt="">
+        </section>
+        <a href="images/comic book icon.jpg" download="images/comic book icon.jpg"><button class="btn" style="width:100%"><i class="fa fa-download"></i> Download</button></a>
+    </main>
+    <footer>
+        <p>&copy; 2023 Comic Collab</p>
+    </footer>
+</body>
+
+</html>

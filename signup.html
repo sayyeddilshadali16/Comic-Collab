@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Collab</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="images/comic book icon.jpg">
+    <style>
+        @media only screen and  ( max-width:650px){
+           .img1{
+               height: 100%;
+               width: 100%
+           }
+           .topnav a{
+               display: inline-block;
+              padding: 7px;
+               height: 100%;
+           }
+           td{
+               padding: 10px;
+           }
+           input{
+               border: 1px solid black;
+           }
+           .container{
+            height: auto;
+           }
+          }
+   </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Comic Collab</h1>
+        <nav>
+            <div class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="categories.html">Genres & Categories</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container" style="width: 300px; margin: 80px auto;">
+        <h2>Create account</h2>
+        <form action="login.php" method="POST">
+            <table align="center">
+                <tr>
+                    <td align="left">
+                        <label for="username">Username:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="username" name="username" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="password">Create Password:</label>
+                
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="password">Confirm Password:</label>
+                
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Login</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Comic Collab</p>
+    </footer>
+</body>
+
+</html>
